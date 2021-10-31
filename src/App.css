@@ -1,3 +1,66 @@
+button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+  }
+
+button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: #191b20;
+  width: 80%;
+  padding: 30px;
+  margin: 30px
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: #191b20;
+  width: 80%;
+  padding: 30px;
+  margin: 30px
+}
+
+.user input {
+  width: 150px;
+  height: 40px;
+  border:none;
+  outline:none;
+  background: #F4F6FC;
+  font-size:15px;
+  color:#8798AD;
+  padding-right: 20px;
+  padding-left :50px;
+  border-radius:20px;
+}
+
 .App {
   text-align: center;
 }

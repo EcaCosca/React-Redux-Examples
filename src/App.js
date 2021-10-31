@@ -70,22 +70,31 @@ function App() {
   }, []);
 
   return (
-    <div>
-      {/* 6. You can also acces the state of the reducer using the "state.user we get form the useSelector method de declared previously. */}
-      <h1>{state.user}</h1>
-      {/* 5. In this case we use the value inside of the setUser hook to have the addNewUser function dispatch this information to the user reducer.*/}
-      <input onChange={(e)=> {setUser(e.target.value)}}></input>
-      <button onClick={addNewUser}>Change user name</button>
+    <div className="App App-header">
+      <div className="user">
+        {/* 6. You can also acces the state of the reducer using the "state.user we get form the useSelector method de declared previously. */}
+        <h1>{state.user}</h1>
+        {/* 5. In this case we use the value inside of the setUser hook to have the addNewUser function dispatch this information to the user reducer.*/}
+        <input onChange={(e)=> {setUser(e.target.value)}}></input>
+        <button onClick={addNewUser}>Change user name</button>
+      </div>
 
-      {state.counter}
-      <button onClick={inc}>Inc 10</button>
-      <button onClick={dec}>Dec 10</button>
-      <button onClick={reset}>Reset</button>
+      <div className="counter">
+        <h2>{state.counter}</h2>
+        <button onClick={inc}>Increase 10</button>
+        <button onClick={dec}>Decrease 10</button>
+        <button onClick={reset}>Reset</button>
+      </div>
 
+      <button onClick={console.log(state.todos)}>Check the api request</button>
       {state.todos.map((element) => {
         return (
-          <div>
-            <p>{element.id}</p>
+          <div className="todo">
+            <p>
+              Task # {element.id}
+              <br/>
+              {element.title.toUpperCase()}
+            </p>
             <button
               onClick={() => {
                 dispatch(removeTodo(element));
