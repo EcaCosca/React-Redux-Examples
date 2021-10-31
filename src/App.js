@@ -86,7 +86,6 @@ function App() {
         <button onClick={reset}>Reset</button>
       </div>
 
-      <button onClick={console.log(state.todos)}>Check the api request</button>
       {state.todos.map((element) => {
         return (
           <div className="todo">
