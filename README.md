@@ -1,8 +1,12 @@
-# Getting Started with Create React App
+# Getting Started with Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+In the project directory, install the following packages:
+
+### `npm install react react-redux`
+
+## Guide
 
 1. Set up enviorement
     1. Create a folder called 'reducers' in the 'src' folder
